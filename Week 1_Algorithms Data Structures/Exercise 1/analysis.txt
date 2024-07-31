@@ -1,4 +1,4 @@
-STEP 4: ANALYSIS
+STEP 4: ANALYSIS .
 
 Time Complexity of Operations:
 
