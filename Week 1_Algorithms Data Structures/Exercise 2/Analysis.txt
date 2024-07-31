@@ -1,0 +1,21 @@
+STEP 4: ANALYSIS
+
+Time Complexity Comparison:
+
+1.Linear Search:
+
+-Best Case: O(1)
+-Average Case: O(n)
+-Worst Case: O(n)
+
+2.Binary Search:
+
+-Best Case: O(1)
+-Average Case: O(log n)
+-Worst Case: O(log n)
+
+Suitability for the Platform:
+
+Binary Search is more suitable for the
+e-commerce platform if the product data can be kept sorted or if sorting is feasible, as it provides faster search times (O(log n)) compared to linear search (O(n)).
+Linear Search may be used if the dataset is small or unsorted, but it becomes inefficient for larger datasets compared to binary search.

@@ -1,0 +1,15 @@
+STEP 4: ANALYSIS
+
+Time Complexity of Operations:
+
+1. Add: O(1) — Inserting an element into a HashMap has an average time complexity of O(1).
+2. Update: O(1) — Updating an element in a HashMap also has an average time complexity of O(1).
+3. Delete: O(1) — Removing an element from a HashMap has an average time complexity of O(1).
+
+Optimization Considerations:
+
+1. Data Structure Choice: Using a HashMap ensures efficient access,
+ but if memory usage is a concern, consider alternative data structures like 
+TreeMap for sorted order or LinkedHashMap for order preservation.
+2. Concurrency: For concurrent access, consider using ConcurrentHashMap to handle multiple threads.
+3.Data Size: For very large inventories, consider database solutions or specialized data storage systems.

@@ -1,0 +1,15 @@
+STEP 4: ANALYSIS
+
+1. Time Complexity: 
+
+O(n), where n is the number of years. Each recursive call reduces the number of years by 1, 
+resulting in n recursive calls.
+
+2. Optimizing the Recursive Solution
+To avoid excessive computation and stack overflow issues with deep recursion, 
+we can optimize the solution using memoization or convert it to an iterative approach.
+
+3. Memoization
+Memoization involves storing the results of expensive function calls and
+reusing the results when the same inputs occur again. This approach is particularly useful for problems 
+with overlapping subproblems.

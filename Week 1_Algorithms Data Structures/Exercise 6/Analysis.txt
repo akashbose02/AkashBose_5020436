@@ -1,0 +1,55 @@
+STEP 4: ANALYSIS
+
+Time Complexity Comparison
+
+1. Linear Search:
+
+   - Best Case: O(1) 
+     - This occurs when the target element is the first element in the list.
+   - Average Case: O(n)
+     - On average, you may need to check half of the elements in the list to find the target.
+   - Worst Case:O(n) 
+     - This occurs when the target element is not present in the list or is the last element.
+
+2. Binary Search:
+
+   - Best Case: O(1) 
+     - This occurs when the target element is exactly in the middle of the list.
+   - Average Case: O(log n) 
+     - The list is divided in half at each step, so the time complexity grows 
+     logarithmically with the number of elements.
+   - Worst Case: O(log n) 
+     - This occurs when the target element is not present, requiring the algorithm to
+      reduce the search interval until it is empty.
+
+WHEN TO USE EACH ALGORITHM
+
+1. Linear Search:
+
+   Use Cases:
+     - Unsorted Lists: Linear search works regardless of whether the list is sorted or not.
+     - Small Data Sets: For small lists, the difference in efficiency between linear and binary search is negligible.
+     - Simple Implementation: If you need a quick and simple solution without additional requirements.
+
+   Advantages:
+     - Simple to implement.
+     - No requirement for the list to be sorted.
+
+   Disadvantages:
+     - Inefficient for large lists due to its linear time complexity.
+
+2. Binary Search:
+
+   Use Cases:
+     - Sorted Lists: Binary search requires that the list be sorted. If the list is sorted 
+        or if you can afford to sort it beforehand, binary search is preferable.
+     - Large Data Sets: For large lists, binary search is much more efficient due to its logarithmic time complexity.
+     - Performance-Critical Applications: When searching through large volumes of data where efficiency is crucial.
+
+   Advantages:
+     - Much faster than linear search for large data sets.
+     - Efficient for sorted data due to its logarithmic time complexity.
+
+   Disadvantages:
+     - Requires the data to be sorted.
+     - More complex to implement compared to linear search.

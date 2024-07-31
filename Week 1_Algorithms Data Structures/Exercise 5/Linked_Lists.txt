@@ -1,0 +1,58 @@
+STEP 1: UNDERSTANDING LINKED LISTS
+
+Linked lists are a fundamental data structure used to store a collection of elements. Unlike arrays,
+which store elements in contiguous memory locations, linked lists use nodes that are linked together through pointers or references. 
+Each node in a linked list contains data and a reference (or pointer) to the next node in the sequence.
+
+Here are the different types of linked lists:
+
+1. Singly Linked List: A singly linked list is a type of linked list where each node contains data and a reference to the 
+next node in the sequence. It has a single link (or pointer) to the next node, making traversal in one direction only.
+
+Structure:
+  - Node: Contains the data and a reference to the next node.
+  - Head: A reference to the first node in the list.
+  - Tail (optional): A reference to the last node (not always present).
+
+Operations:
+  - Insertion: Adding a new node at the beginning, end, or a specific position.
+  - Deletion: Removing a node from the beginning, end, or a specific position.
+  - Traversal: Iterating through the list from the head to the end.
+  - Search: Finding a node by traversing from the head.
+
+Advantages:
+  - Dynamic size: Can easily grow and shrink in size.
+  - Efficient insertions/deletions: Can add or remove nodes without reallocating or reorganizing the entire structure.
+
+Disadvantages:
+  - Inefficient random access: Must traverse from the head to reach a specific node.
+  - More memory usage: Requires extra space for the pointer/reference to the next node.
+
+Example:
+  Head -> [Data|Next] -> [Data|Next] -> [Data|Next] -> null
+
+2. Doubly Linked List: A doubly linked list is a type of linked list where each node contains data and two references: 
+one to the next node and one to the previous node. This allows traversal in both directions (forward and backward).
+
+Structure:
+  - Node: Contains the data, a reference to the next node, and a reference to the previous node.
+  - Head: A reference to the first node in the list.
+  - Tail: A reference to the last node in the list.
+
+Operations:
+  - Insertion: Adding a new node at the beginning, end, or a specific position.
+  - Deletion: Removing a node from the beginning, end, or a specific position.
+  - Traversal: Iterating through the list from the head to the end or from the tail to the head.
+  - Search: Finding a node by traversing from either the head or the tail.
+
+Advantages:
+  - Bidirectional traversal: Can traverse in both forward and backward directions.
+  - Easier deletion: Can easily remove nodes without needing to traverse from the head to the node's previous node.
+
+Disadvantages:
+  - More memory usage: Requires extra space for the previous node reference.
+  - More complex implementation: Requires managing two references per node.
+
+Example:
+  Head -> [Prev|Data|Next] <-> [Prev|Data|Next] <-> [Prev|Data|Next] <- Tail
+

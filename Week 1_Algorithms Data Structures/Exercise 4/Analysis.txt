@@ -1,0 +1,21 @@
+STEP 5. ANALYSIS
+
+1.Time Complexity of Operations:
+
+A. Add Operation:
+Time Complexity: O(1) (Constant time since we add the employee to the end of the array if space is available)
+
+B.Search Operation:
+Time Complexity: O(n) (Linear time, as we may need to scan through the entire array to find the employee)
+
+C.Traverse Operation:
+Time Complexity: O(n) (Linear time, as we need to visit each element in the array)
+
+D.Delete Operation:
+Time Complexity: O(n) (Linear time, as we may need to shift elements after deleting an employee)
+
+2. WHEN TO USE ARRAYS: Arrays are suitable when:
+
+a. The number of elements is known and fixed.
+b. Fast random access to elements is required.
+c. Memory usage needs to be minimized.

@@ -1,0 +1,58 @@
+STEP 1. UNDERSTANDING ARRAY REPRESENTATION
+
+1. Representation in Memory
+Arrays are stored in memory as a contiguous block of elements. 
+This means that all elements of the array are stored sequentially in memory. 
+Each element in the array occupies a fixed amount of space, and the memory address of each element can be calculated directly.
+
+For example, consider an array arr of integers:
+
+int[] arr = {10, 20, 30, 40, 50};
+In memory, this array might be represented as follows (assuming each integer takes 4 bytes of memory):
+
+Index	Value	Memory Address
+0	    10	    0x1000
+1	    20	    0x1004
+2	    30	    0x1008
+3	    40	    0x100C
+4	    50	    0x1010
+
+2. Accessing Elements
+Because arrays are stored contiguously, you can access any element in constant time using its index.
+This is one of the primary advantages of arrays: random access to elements is very efficient.
+
+For example, to access the third element in the array (arr[2]), the memory address can be calculated as:
+
+Base Address + (Index * Size of Each Element)
+
+So, for arr[2]:
+0x1000 + (2 * 4) = 0x1008
+This calculation is very fast, making array element access O(1) in time complexity.
+
+3. ADVANTAGES OF ARRAYS:
+
+a.Fast Access (O(1) Time Complexity):
+Elements can be accessed directly via their index, leading to constant time access. 
+This makes arrays ideal for situations where you need quick access to elements.
+
+b.Memory Efficiency:
+Arrays use a contiguous block of memory, which minimizes the overhead compared to other data structures like 
+linked lists where additional memory is needed for pointers.
+
+c.Cache Friendliness:
+Because arrays are stored contiguously, accessing elements sequentially is cache-friendly. 
+Modern CPUs fetch data in chunks (cache lines), and contiguous memory access means that many elements of the array can be fetched 
+into the cache at once, leading to improved performance.
+
+4. LIMITATIONS IN ARRAYS:
+
+a.Fixed Size:
+The size of an array must be defined at the time of its creation and cannot be changed dynamically.
+If you allocate an array that's too large, you waste memory. If it's too small, 
+you may need to create a new larger array and copy all the elements over, which is inefficient.
+
+b.Inefficient Insertion/Deletion:
+Inserting or deleting elements in an array can be slow because it may require shifting elements.
+For example, inserting an element at the beginning of the array requires all existing elements to be shifted one position to the right. 
+Similarly, deleting an element requires shifting elements to the left to fill the gap. 
+This results in a time complexity of O(n) for these operations.
